@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">Eduardo Gama</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Disponível para projetos</p>
+      <h1 class="hero-title">
+        Análise de Dados,<br><em>Design &amp;</em><br>Programação
+      </h1>
+      <p class="hero-desc">
+        Crio soluções digitais completas, da ideia à execução, unindo análise, experiência e desenvolvimento.
+      </p>
+      <a href="#projects" class="hero-cta">
+        Ver projetos <span class="hero-cta-arrow">→</span>
+      </a>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+    <img src="imagens/dudugama.jpeg" alt="foto de Dudu Gama">
+  </div>
+      <div class="hero-badge">
+        <span class="hero-badge-num">+3</span>
+        <span class="hero-badge-label">Anos de experiência</span>
+      </div>
+    </div>
+    <div class="hero-bg-line"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-text">
+      <span class="section-label">Sobre mim</span>
+      <h2 class="section-title">Construo soluções digitais com foco em decisão e impacto</h2>
+      <p>Olá! Sou um estudante trabalhando em combinar análise de dados, design e desenvolvimento para transformar ideias em algo funcional, útil e bem executado.</p>
+      <p>Não gosto de criar por criar, mas sim de entender o problema antes de pensar na solução.</p>
+    </div>
+    <div class="about-skills">
+      <span class="section-label">Habilidades</span>
+      <div class="skill-row">
+        <div class="skill-label"><span>HTML / CSS</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width=".75"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-label"><span>Python</span><span>80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width=".80"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-label"><span>SQL</span><span>90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width=".90"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-label"><span>UI / UX Design</span><span>95%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width=".95"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <span class="section-label">Trabalhos</span>
+    <h2 class="section-title">Projetos selecionados</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="imagens/pontas.png"
+            alt="Scouting Corinthians"
+            style="width:100%; height:100%; object-fit:cover;" />
+        </div>
+        <div class="project-body">
+          <p class="project-tag">Análise de Dados</p>
+          <h3 class="project-name">Scouting - Corinthians</h3>
+          <p class="project-desc">Projeto de análise de dados simulando um processo de scouting para identificar oportunidades de contratação para o Sport Club Corinthians Paulista.</p>
+          <a href="https://github.com/dudugama/scouting-corinthians" target="_blank" class="project-link">Ver projeto →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb"><div class="project-thumb-inner">02</div></div>
+        <div class="project-body">
+          <p class="project-tag">Landing Page</p>
+          <h3 class="project-name">Outro Projeto</h3>
+          <p class="project-desc">Breve descrição do projeto e das tecnologias utilizadas para construí-lo.</p>
+          <a href="#" class="project-link">Ver projeto →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb"><div class="project-thumb-inner">03</div></div>
+        <div class="project-body">
+          <p class="project-tag">Open Source</p>
+          <h3 class="project-name">Mais um Projeto</h3>
+          <p class="project-desc">Breve descrição do projeto e das tecnologias utilizadas para construí-lo.</p>
+          <a href="#" class="project-link">Ver projeto →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-info">
+      <span class="section-label">Contato</span>
+      <h2 class="section-title">Vamos trabalhar juntos?</h2>
+      <p>Estou aberto a freelas, colaborações e oportunidades de emprego. Envie uma mensagem!</p>
+      <div class="contact-links">
+        <a href="mailto:eduardosantosgama@gmail.com" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          eduardosantosgama@gmail.com
+        </a>
+        <a href="https://github.com/dudugama" target="_blank" class="contact-link">
+          <div class="contact-link-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
+            </svg>
+          </div>
+          github.com/dudugama
+        </a>
+        <a href="https://linkedin.com/in/eduardogamaa" target="_blank" class="contact-link">
+          <div class="contact-link-icon">in</div>
+          linkedin.com/in/eduardogamaa
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Seu nome" required />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seu@email.com" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" placeholder="Olá, gostaria de conversar sobre..." required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Enviar mensagem →</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Eduardo Gama. Todos os direitos reservados.</p>
+    <p>Feito com ♥ no Brasil</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
