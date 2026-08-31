@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="title.projetos">Todos os projetos — Eduardo Gama</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo">Eduardo Gama</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" data-i18n-aria="header.menuAria" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-menu__list">
+        <li><a href="projetos.html" class="is-active" data-i18n="nav.projetos">Projetos</a></li>
+        <li><a href="index.html#sobre" data-i18n="nav.sobre">Sobre</a></li>
+        <li><a href="index.html#curriculo" data-i18n="nav.curriculo">Currículo</a></li>
+        <li><a href="contato.html" data-i18n="nav.contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro" data-i18n-aria="header.themeAria">
+        <iconify-icon icon="ph:moon-bold" width="20" height="20"></iconify-icon>
+      </button>
+      <button class="lang-btn" id="langToggle" aria-label="Alternar idioma" data-i18n-aria="header.langAria">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ CABEÇALHO DA PÁGINA ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="section-title" data-i18n="projetos.heading">Todos os projetos</h1>
+      <p class="page-hero__subtitle section-subtitle" data-i18n="projetos.subtitle">Uma seleção detalhada de estudos de caso em UX/UI, design de produtos e soluções visuais.</p>
+
+      <div class="filter-tabs" role="tablist" aria-label="Filtrar projetos por categoria" data-i18n-aria="filter.aria">
+        <button class="pill pill--active" type="button" data-filter="todos" role="tab" aria-selected="true" data-i18n="filter.all">Todos</button>
+        <button class="pill" type="button" data-filter="ux-ui" role="tab" aria-selected="false">UX/UI Design</button>
+        <button class="pill" type="button" data-filter="data-code" role="tab" aria-selected="false" data-i18n="filter.dataCode">Data &amp; Code</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESIGN UX/UI ============ -->
+  <section class="projects-page" data-section="ux-ui">
+    <div class="container">
+      <h2 class="section-title" data-i18n="uxui.heading">Design UX/UI</h2>
+
+      <p class="section-lead section-subtitle" data-i18n="uxui.desc">Estudos de caso em UX/UI, design de produto e prototipação de interfaces.</p>
+
+      <div class="projects-page__grid" id="projectsGrid">
+
+        <article class="project-card project-card--wide" data-category="ux-ui">
+          <div class="project-card__media">
+            <img src="imagens/capa-card.webp" alt="Foto de mesa de trabalho com laptop mostrando o projeto Escritório de Leilões" class="img-placeholder img-placeholder--project-wide" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3>Escritório de Leilões</h3>
+            <p class="project-card__meta" data-i18n="project.leiloes.meta">Case real • UX/UI</p>
+            <p class="project-card__desc" data-i18n="project.leiloes.desc">Plataforma para divulgação de leilões de bens móveis e imóveis com foco em transparência, confiança e uma experiência intuitiva para arrematantes.</p>
+
+            <ul class="card-tags" aria-label="Disciplinas e áreas do projeto">
+              <li class="card-tag">UX Research</li>
+              <li class="card-tag">UI Design</li>
+              <li class="card-tag">Prototipagem</li>
+              <li class="card-tag">Case Real</li>
+            </ul>
+
+            <a href="projeto.html" class="btn btn--primary card-cta">
+              <span data-i18n="project.leiloes.cta">Ver Case Completo</span>
+              <iconify-icon icon="ph:arrow-right-bold" width="18" height="18"></iconify-icon>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="projects-page__empty" id="emptyState" hidden data-i18n="projetos.empty">Nenhum projeto encontrado nesta categoria por enquanto.</p>
+    </div>
+  </section>
+
+  <!-- ============ CÓDIGO & ANÁLISE DE DADOS ============ -->
+  <section class="code-data" id="code-data" data-section="data-code">
+    <div class="container">
+      <h2 class="section-title" data-i18n="code.heading">Código &amp; Análise de Dados</h2>
+
+      <p class="section-lead section-subtitle" data-i18n="code.desc">Projetos focados em lógica de programação, automação e manipulação de dados com Python.</p>
+
+      <div class="code-data__grid">
+        <article class="project-card project-card--code" data-category="data-code">
+          <div class="project-card__media">
+            <img src="imagens/scout-corinthians-cover.webp" alt="Scouting Corinthians Data Analysis" class="img-placeholder img-placeholder--code" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3 data-i18n="code.scouting.title">Scouting Corinthians — Análise de Dados</h3>
+            <p class="project-card__meta" data-i18n="code.scouting.meta">Projeto pessoal • Python</p>
+            <p class="project-card__desc" data-i18n="code.scouting.desc">Ferramenta em Python para leitura, tratamento e manipulação estatística de dados de atletas para prospecção de desempenho (Sports Analytics).</p>
+
+            <ul class="card-tags" aria-label="Tecnologias e áreas do projeto">
+              <li class="card-tag">Python</li>
+              <li class="card-tag">Pandas</li>
+              <li class="card-tag">Data Analysis</li>
+              <li class="card-tag">Sports Analytics</li>
+            </ul>
+
+            <a href="https://github.com/dudugama/scouting-corinthians" target="_blank" rel="noopener noreferrer" class="btn btn--primary card-cta">
+              <span data-i18n="code.scouting.cta">Ver no GitHub</span>
+              <iconify-icon icon="ph:github-logo-bold" width="18" height="18"></iconify-icon>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CONTATO / FOOTER ============ -->
+<footer class="contact" id="contato">
+  <div class="container contact__inner">
+    <div class="contact__content">
+      <h2 data-i18n="footer.cta">Vamos trabalhar juntos?</h2>
+      <p data-i18n="footer.sub">Estou disponível para novos projetos, oportunidades e parcerias.</p>
+    </div>
+
+    <ul class="contact__list">
+      <li>
+        <iconify-icon icon="ph:envelope-simple-bold" width="18" height="18"></iconify-icon>
+        <a href="mailto:eduardosantosgama@gmail.com">eduardosantosgama@gmail.com</a>
+      </li>
+      <li>
+        <iconify-icon icon="ph:linkedin-logo-bold" width="18" height="18"></iconify-icon>
+        <a href="https://linkedin.com/in/eduardogamaa" target="_blank" rel="noopener">linkedin.com/in/eduardogamaa</a>
+      </li>
+      <li>
+        <iconify-icon icon="ph:github-logo-bold" width="18" height="18"></iconify-icon>
+        <a href="https://github.com/dudugama" target="_blank" rel="noopener">github.com/dudugama</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

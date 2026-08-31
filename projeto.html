@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="title.projeto">Escritório de Leilões — Case study | Eduardo Gama</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo">Eduardo Gama</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" data-i18n-aria="header.menuAria" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-menu__list">
+        <li><a href="projetos.html" class="is-active" data-i18n="nav.projetos">Projetos</a></li>
+        <li><a href="index.html#sobre" data-i18n="nav.sobre">Sobre</a></li>
+        <li><a href="index.html#curriculo" data-i18n="nav.curriculo">Currículo</a></li>
+        <li><a href="contato.html" data-i18n="nav.contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro" data-i18n-aria="header.themeAria">
+        <iconify-icon icon="ph:moon-bold" width="20" height="20"></iconify-icon>
+      </button>
+      <button class="lang-btn" id="langToggle" aria-label="Alternar idioma" data-i18n-aria="header.langAria">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ TOPO DO CASE ============ -->
+  <section class="case-hero">
+    <div class="container">
+
+      <div class="case-hero__top">
+        <div class="case-hero__content">
+          <h1>Escritório de Leilões</h1>
+          <p class="case-hero__subtitle" data-i18n="case.hero.subtitle">Redesign da plataforma digital e portal de oportunidades focado em transparência e confiança.</p>
+        </div>
+
+        <div class="case-hero__visual">
+          <img src="imagens/mockup-notebook.webp" alt="Mockup do projeto exibido em um laptop" class="img-placeholder img-placeholder--laptop" loading="lazy">
+        </div>
+      </div>
+
+      <div class="case-meta">
+        <div class="case-meta__item">
+          <span class="case-meta__label" data-i18n="case.role.label">Função:</span>
+          <span class="case-meta__value" data-i18n="case.role.value">UX/UI Design &amp; Direção de Arte</span>
+        </div>
+        <div class="case-meta__item">
+          <span class="case-meta__label" data-i18n="case.duration.label">Duração:</span>
+          <span class="case-meta__value" data-i18n="case.duration.value">3 semanas</span>
+        </div>
+        <div class="case-meta__item">
+          <span class="case-meta__label" data-i18n="case.deliverables.label">Entregáveis:</span>
+          <span class="case-meta__value" data-i18n="case.deliverables.value">Desktop App, Mobile App &amp; Design System</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ DESAFIO / SOLUÇÃO ============ -->
+  <section class="case-intro">
+    <div class="container case-intro__grid">
+      <div class="case-intro__col">
+        <h2 data-i18n="case.challenge.heading">O Desafio</h2>
+        <p data-i18n="case.challenge.desc">A interface anterior apresentava ruídos na navegação e falta de clareza nas informações dos lotes, o que gerava desconfiança nos usuários e aumentava a taxa de abandono durante os lances.</p>
+      </div>
+      <div class="case-intro__col">
+        <h2 data-i18n="case.solution.heading">A Solução</h2>
+        <p data-i18n="case.solution.desc">Redesenhei a arquitetura de informação e a hierarquia visual do portal, criando uma navegação transparente, com cards de lotes objetivos, chamadas claras para ação e foco na acessibilidade e segurança do arrematante.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARQUITETURA UNIFICADA ============ -->
+  <section class="case-architecture">
+    <div class="container">
+      <h2 data-i18n="case.arch.heading">Arquitetura Unificada</h2>
+      <p class="case-section__lead" data-i18n="case.arch.lead">O maior desafio foi consolidar duas frentes de negócio distintas em uma única experiência digital. Desenhei uma arquitetura que segmenta com clareza os leilões parceiros e as oportunidades de venda direta, permitindo que o usuário navegue por ambos os ecossistemas sem perder o contexto.</p>
+
+      <div class="arch-block">
+        <div class="arch-block__content">
+          <h3 data-i18n="case.arch.dynamic.title">01. Filtros Dinâmicos por Categoria</h3>
+          <p data-i18n="case.arch.dynamic.desc">A interface foi estruturada para reunir universos distintos, como imóveis, veículos, máquinas e itens de apartamentos decorados em uma única experiência de busca. A partir da categoria selecionada, os filtros se adaptam ao contexto de cada ativo, exibindo apenas os critérios relevantes para aquela pesquisa. Dessa forma, diferentes jornadas são concentradas em um mesmo fluxo, reduzindo cliques desnecessários e tornando a navegação mais simples, previsível e organizada.</p>
+        </div>
+        <div class="arch-block__media">
+          <img src="imagens/filtros.webp" alt="Tela mostrando os filtros dinâmicos por categoria" class="img-placeholder img-placeholder--arch" loading="lazy">
+        </div>
+      </div>
+
+      <div class="arch-block arch-block--reverse">
+        <div class="arch-block__content">
+          <h3 data-i18n="case.arch.onboarding.title">02. Onboarding e Validação Progressiva</h3>
+          <p data-i18n="case.arch.onboarding.desc">Por se tratar de um ecossistema de leilões, o processo exige rigidez jurídica no recolhimento de dados e documentos. Para mitigar a taxa de abandono, a jornada de cadastro foi estruturada de forma progressiva e transparente. Interfaces claras de upload de documentação contam com validações em tempo real para arquivos e formatos, transformando uma etapa burocrática em um fluxo fluido e seguro.</p>
+        </div>
+        <div class="arch-block__media">
+          <img src="imagens/cadastro.webp" alt="Tela do fluxo de onboarding e validação progressiva de documentos" class="img-placeholder img-placeholder--arch" loading="lazy">
+        </div>
+      </div>
+
+      <div class="arch-block">
+        <div class="arch-block__content">
+          <h3 data-i18n="case.arch.transparency.title">03. Transparência na Tomada de Decisão</h3>
+          <p data-i18n="case.arch.transparency.desc">A página do lote concentra as informações essenciais para a tomada de decisão, com destaque para status, valor e ação de participação. Dados técnicos, descrição, localização e documentos foram organizados de forma clara, reduzindo a sobrecarga de informação e transmitindo mais segurança durante a jornada.</p>
+        </div>
+        <div class="arch-block__media">
+          <img src="imagens/tela-imovel.webp" alt="Tela de detalhe do lote com informações de status, valor e documentos" class="img-placeholder img-placeholder--arch" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERFACE DE ALTA FIDELIDADE ============ -->
+  <section class="case-showcase">
+    <div class="container">
+      <h2 data-i18n="case.showcase.heading">Interface de Alta Fidelidade</h2>
+      <p class="case-section__lead" data-i18n="case.showcase.lead">Uma visão geral das principais telas do ecossistema desktop, unificando consistência visual, acessibilidade e uma interface limpa focado na experiência do usuário.</p>
+
+      <figure class="showcase-frame">
+        <img src="imagens/home.webp" alt="Tela inicial completa do portal: hero, segmentos e oportunidades em destaque" class="img-placeholder img-placeholder--showcase-primary" loading="lazy">
+      </figure>
+
+      <div class="showcase-grid">
+        <figure class="showcase-grid__frame">
+          <img src="imagens/catalogo.webp" alt="Tela de pesquisa de oportunidades com resultados em lista" class="img-placeholder img-placeholder--showcase-secondary" loading="lazy">
+        </figure>
+        <figure class="showcase-grid__frame">
+          <img src="imagens/produto.webp" alt="Tela de detalhe de uma oportunidade/lote" class="img-placeholder img-placeholder--showcase-secondary" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="showcase-grid showcase-grid--mobile">
+        <figure class="showcase-grid__frame">
+          <img src="imagens/dados pessoais.webp" alt="Tela mobile: criar sua conta, etapa 1" class="img-placeholder img-placeholder--showcase-mobile" loading="lazy">
+        </figure>
+        <figure class="showcase-grid__frame">
+          <img src="imagens/doc.webp" alt="Tela mobile: criar sua conta, etapa 2" class="img-placeholder img-placeholder--showcase-mobile" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CONTATO / FOOTER ============ -->
+<footer class="contact" id="contato">
+  <div class="container contact__inner">
+    <div class="contact__content">
+      <h2 data-i18n="footer.cta">Vamos trabalhar juntos?</h2>
+      <p data-i18n="footer.sub">Estou disponível para novos projetos, oportunidades e parcerias.</p>
+    </div>
+
+    <ul class="contact__list">
+      <li>
+        <iconify-icon icon="ph:envelope-simple-bold" width="18" height="18"></iconify-icon>
+        <a href="mailto:eduardosantosgama@gmail.com">eduardosantosgama@gmail.com</a>
+      </li>
+      <li>
+        <iconify-icon icon="ph:linkedin-logo-bold" width="18" height="18"></iconify-icon>
+        <a href="https://linkedin.com/in/eduardogamaa" target="_blank" rel="noopener">linkedin.com/in/eduardogamaa</a>
+      </li>
+      <li>
+        <iconify-icon icon="ph:github-logo-bold" width="18" height="18"></iconify-icon>
+        <a href="https://github.com/dudugama" target="_blank" rel="noopener">github.com/dudugama</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
